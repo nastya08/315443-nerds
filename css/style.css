@@ -40,7 +40,7 @@ h3 {
 }
 
 .container {
-  width: 1200px;
+  width: 1160px;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -125,7 +125,7 @@ h3 {
   vertical-align: middle;
 }
 
-.index-logo:last-child {
+.index-logo:nth-child(4n) {
   margin-right: 0px;
 }
 
@@ -153,7 +153,8 @@ h3 {
 
 .social-footer {
   float: left;
-  width: 260px;
+  width: 380px;
+  margin-right: 20px;
 }
 
 .text {
@@ -170,29 +171,26 @@ h3 {
   float: left;
   width: 260px;
   min-height: 780px;
-  margin-right: 140px;
+  margin-right: 100px;
 }
 
 .column-right {
   float: right;
-  width: 760px;
+  width: 800px;
 }
 
 .sort {
   width: 760px;
   min-height: 20px;
   margin-bottom: 55px;
+  padding-left: 40px;
 }
 
 .product {
   float: left;
   width: 360px;
-  margin-right: 40px;
+  margin-left: 40px;
   margin-bottom: 40px;
-}
-
-.product:nth-child(2n) {
-  margin-right: 0px;
 }
 
 .pagination {
