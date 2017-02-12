@@ -3,13 +3,15 @@
   <head>
     <meta charset="utf-8">
     <title>Nёrd's - Магазин готовых шаблонов</title>
-    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="main-header">
       <div class="container">
         <div class="logo-header">
-          <a href="#"><img src="img/nerds-logo.png" alt="Nёrd's" width="160" height="65"></a>
+          <a href="index.html"><img src="img/nerds-logo.png" alt="Nёrd's" width="160" height="65"></a>
         </div>
         <nav class="main-navigation">
           <ul>
@@ -19,8 +21,8 @@
             <li>
               <a href="#">Клиенты</a>
             </li>
-            <li>
-              <a href="#">Магазин</a>
+            <li class="active">
+              <a>Магазин</a>
             </li>
             <li>
               <a href="#">Контакты</a>
@@ -28,7 +30,7 @@
           </ul>
         </nav>
         <div class="user-block">
-          <a class="bag" href="#">Корзина</a>
+          <a class="basket" href="#">Корзина</a>
         </div>
       </div>
     </header>
@@ -39,113 +41,158 @@
       <div class="container clearfix">
         <div class="column-left">
           <form action="https://echo.htmlacademy.ru" method="get">
-            <fieldset class="price">
+            <fieldset class="filter">
               <legend>Стоимость:</legend>
-              <div class="price-slider">
+              <div class="price-filter">
+                <div class="scale">
+                  <div class="bar" style="margin-left: 0%; width: 65%"></div>
+                  <div class="toggle toggle-min"></div>
+                  <div class="toggle toggle-max"></div>
+                </div>
               </div>
-              <div class="price-min-max">
-                <label for="min-price">от</label>
-                <input type="text" id="min-price" name="min-price-field">
-                <label for="max-price">до</label>
-                <input type="text" id="max-price" name="max-price-field">
+              <div class="price-controls">
+                <label class="min-price">от <input name="min-price" type="text" value="0"></label>
+                <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
               </div>
             </fieldset>
-            <fieldset class="filter">
+            <fieldset class="filter filter-2">
               <legend>Сетка:</legend>
-              <input type="radio" name="grids" id="grids-1" value="grids-1">
-              <label for="grids-1">Адаптивная</label>
-              <input type="radio" name="grids" id="grids-2" value="grids-2">
-              <label for="grids-2">Фиксированная</label>
-              <input type="radio" name="grids" id="grids-3" value="grids-3">
-              <label for="grids-3">Резиновая</label>
+              <ul>
+                <li>
+                  <label class="grids-radio">
+                    <input type="radio" name="grids" value="grids-1">
+                    <span class="radio-indicator"></span>
+                    <span>Адаптивная</span>
+                  </label>
+                </li>
+                <li>
+                  <label class="grids-radio">
+                    <input type="radio" name="grids" value="grids-2">
+                    <span class="radio-indicator"></span>
+                    <span>Фиксированная</span>
+                  </label>
+                </li>
+                <li>
+                  <label class="grids-radio">
+                    <input type="radio" name="grids" value="grids-3">
+                    <span class="radio-indicator"></span>
+                    <span>Резиновая</span>
+                  </label>
+                </li>
+              </ul>
             </fieldset>
-            <fieldset class="filter">
+            <fieldset class="filter filter-2">
               <legend>Особенности:</legend>
-              <input type="checkbox" name="features-1" id="features-1-field">
-              <label for="features-1-field">Слайдер</label>
-              <input type="checkbox" name="features-2" id="features-2-field">
-              <label for="features-2-field">Блок преимуществ</label>
-              <input type="checkbox" name="features-3" id="features-3-field">
-              <label for="features-3-field">Новости</label>
-              <input type="checkbox" name="features-4" id="features-4-field">
-              <label for="features-4-field">Галерея</label>
-              <input type="checkbox" name="features-5" id="features-5-field">
-              <label for="features-5-field">Корзина</label>
+              <ul>
+                <li>
+                  <label class="features-checkbox">
+                    <input type="checkbox" name="features-1">
+                    <span class="checkbox-indicator"></span>
+                    <span>Слайдер</span>
+                  </label>
+                </li>
+                <li>
+                  <label class="features-checkbox">
+                    <input type="checkbox" name="features-2">
+                    <span class="checkbox-indicator"></span>
+                    <span>Блок преимуществ</span>
+                  </label>
+                </li>
+                <li>
+                  <label class="features-checkbox">
+                    <input type="checkbox" name="features-3">
+                    <span class="checkbox-indicator"></span>
+                    <span>Новости</span>
+                  </label>
+                </li>
+                <li>
+                  <label class="features-checkbox">
+                    <input type="checkbox" name="features-4">
+                    <span class="checkbox-indicator"></span>
+                    <span>Галерея</span>
+                  </label>
+                </li>
+                <li>
+                  <label class="features-checkbox">
+                    <input type="checkbox" name="features-5">
+                    <span class="checkbox-indicator"></span>
+                    <span>Корзина</span>
+                  </label>
+                </li>
+              </ul>
             </fieldset>
             <button class="btn" type="submit">Показать</button>
           </form>
         </div>
-        <div class="column-right">
+        <div class="column-right clearfix">
           <div class="sort">
             <span>Сортировать:</span>
-            <ul>
-              <li><a href="#">По цене</a></li>
+            <ul class="list-1">
+              <li><a class="active" href="#">По цене</a></li>
               <li><a href="#">По типу</a></li>
               <li><a href="#">По названию</a></li>
             </ul>
-            <div class="sort-min-max">
-              <a class="btn-min" href="#"></a>
+              <a class="btn-min active" href="#"></a>
               <a class="btn-max" href="#"></a>
-            </div>
           </div>
           <div class="products clearfix">
             <div class="product">
-              <img src="img/browser.png" alt="" width="360" height="40">
-              <img src="img/img-sedona.jpg" alt="Sedona" width="360" height="576">
+              <img class="browser" src="img/browser.png" alt="" width="360" height="40">
+              <img class="layot" src="img/img-sedona.jpg" alt="Sedona" width="360" height="576">
               <div class="window">
                 <a href="#"><h2 class="title-product">Sedona</h2></a>
-                <p>Информационный сайт для туристов</p>
-                <a class="btn btn-price" href="#">9 900 руб.</a>
+                <p>Информационный сайт<br>для туристов</p>
+                <a class="btn-price" href="#">9 900 руб.</a>
               </div>
             </div>
             <div class="product">
-              <img src="img/browser.png" alt="" width="360" height="40">
-              <img src="img/img-pink.jpg" alt="Pink" width="360" height="576">
+              <img class="browser" src="img/browser.png" alt="" width="360" height="40">
+              <img class="layot" src="img/img-pink.jpg" alt="Pink" width="360" height="576">
               <div class="window">
                 <a href="#"><h2 class="title-product">Pink App</h2></a>
                 <p>Продуктовый лендинг приложения для iOs и Android</p>
-                <a class="btn btn-price" href="#">9 900 руб.</a>
+                <a class="btn-price" href="#">9 900 руб.</a>
               </div>
             </div>
             <div class="product">
-              <img src="img/browser.png" alt="" width="360" height="40">
-              <img src="img/img-barbershop.jpg" alt="Borodinski" width="360" height="576">
+              <img class="browser" src="img/browser.png" alt="" width="360" height="40">
+              <img class="layot" src="img/img-barbershop.jpg" alt="Borodinski" width="360" height="576">
               <div class="window">
                 <a href="#"><h2 class="title-product">Barbershop</h2></a>
-                <p>Сайт салона красоты. Для мужчин,да.</p>
-                <a class="btn btn-price" href="#">9 900 руб.</a>
+                <p>Сайт салона красоты.<br>Для мужчин,да.</p>
+                <a class="btn-price" href="#">9 900 руб.</a>
               </div>
             </div>
             <div class="product">
-              <img src="img/browser.png" alt="" width="360" height="40">
-              <img src="img/img-mishka.jpg" alt="Mishka" width="360" height="576">
+              <img class="browser" src="img/browser.png" alt="" width="360" height="40">
+              <img class="layot" src="img/img-mishka.jpg" alt="Mishka" width="360" height="576">
               <div class="window">
                 <a href="#"><h2 class="title-product">Mishka</h2></a>
-                <p>Интернет-магазин вязаных игрушек</p>
-                <a class="btn btn-price" href="#">9 900 руб.</a>
+                <p>Интернет-магазин<br>вязаных игрушек</p>
+                <a class="btn-price" href="#">9 900 руб.</a>
               </div>
             </div>
             <div class="product">
-              <img src="img/browser.png" alt="" width="360" height="40">
-              <img src="img/img-aplus.jpg" alt="A Plus" width="360" height="576">
+              <img class="browser" src="img/browser.png" alt="" width="360" height="40">
+              <img class="layot" src="img/img-aplus.jpg" alt="A Plus" width="360" height="576">
               <div class="window">
                 <a href="#"><h2 class="title-product">A Plus</h2></a>
                 <p>Лендинг курсов повышения квалификации</p>
-                <a class="btn btn-price" href="#">9 900 руб.</a>
+                <a class="btn-price" href="#">9 900 руб.</a>
               </div>
             </div>
             <div class="product">
-              <img src="img/browser.png" alt="" width="360" height="40">
-              <img src="img/img-kvast.jpg" alt="Kvast" width="360" height="576">
+              <img class="browser" src="img/browser.png" alt="" width="360" height="40">
+              <img class="layot" src="img/img-kvast.jpg" alt="Kvast" width="360" height="576">
               <div class="window">
                 <a href="#"><h2 class="title-product">Кваст</h2></a>
                 <p>Промо-сайт производителя крафтового кваса</p>
-                <a class="btn btn-price" href="#">9 900 руб.</a>
+                <a class="btn-price" href="#">9 900 руб.</a>
               </div>
             </div>
           </div>
           <div class="pagination">
-            <a class="page-btn" href="#">1</a>
+            <a class="page-btn current">1</a>
             <a class="page-btn" href="#">2</a>
             <a class="page-btn" href="#">3</a>
             <a class="page-btn next" href="#">Следующая</a>
