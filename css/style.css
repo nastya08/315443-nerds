@@ -92,7 +92,7 @@ body {
   content: "";
   position: absolute;
   right: 24px;
-  bottom: 0;
+  bottom: 4px;
   left: 24px;
 
   height: 2px;
@@ -167,6 +167,7 @@ body {
   font-size: 55px;
   line-height: 55px;
   font-weight: 500;
+  color: #000000;
 
   padding-top: 80px;
   margin-bottom: 25px;
@@ -215,7 +216,7 @@ body {
 .features {
   min-height: 347px;
   margin-top: 80px;
-  padding-bottom: 80px;
+  padding-bottom: 78px;
   border-bottom: 2px solid #eeeeee;
 }
 
@@ -308,7 +309,7 @@ body {
 
 .about-us {
   margin-top: 40px;
-  padding-bottom: 35px;
+  padding-bottom: 33px;
   border-bottom: 2px solid #eeeeee;
 }
 
@@ -317,15 +318,16 @@ body {
   width: 680px;
   min-width: 370px;
   margin-right: 120px;
-  padding-top: 38px;
+  padding-top: 33px;
 }
 
 .slogan {
   font-size: 45px;
   line-height: 45px;
   font-weight: 500;
+  color: #000000;
   margin: 0;
-  padding-bottom: 31px;
+  padding-bottom: 33px;
 }
 
 .description {
@@ -336,11 +338,13 @@ body {
 .about-us h4 {
   margin: 0;
   text-transform: uppercase;
+  font-weight: 700;
+  color: #000000;
 }
 
 .list {
   padding-left: 0;
-  margin-top: 22px;
+  margin-top: 24px;
 }
 
 .list li {
@@ -358,7 +362,7 @@ body {
   display: block;
   width: 25px;
   height: 2px;
-  margin-left: -35px;
+  margin-left: -34px;
 
   background-color: #fb565a;
 }
@@ -372,20 +376,21 @@ body {
 .logo-about-us {
   width: 360px;
   height: 208px;
-  margin-bottom: 37px;
+  margin-bottom: 36px;
 }
 
 .about-us-right h4 {
   font-weight: 700;
   text-align: center;
-  margin-bottom: 38px;
+  color: #000000;
+  margin-bottom: 33px;
 }
 
 .column {
   display: inline-block;
   font-size: 0px;
-  width: 117px;
-  vertical-align: top;
+  width: 115px;
+  vertical-align: bottom;
 }
 
 .line-1 {
@@ -393,22 +398,23 @@ body {
   font-size: 45px;
   line-height: 45px;
   font-weight: 700;
-  margin-bottom: 14px;
+  color: #000000;
+  margin-bottom: 19px;
 }
 
 .procent {
-  font-size: 30px;
-  vertical-align: text-top;
+  font-size: 28px;
+  vertical-align: 13px;
 }
 
 .line-2 {
+  display: block;
   font-size: 16px;
   line-height: 18px;
-  margin: 0;
 }
 
 .our-works {
-  min-height: 181px;
+  min-height: 180px;
   margin-bottom: 80px;
   border-bottom: 2px solid #eeeeee;
 
@@ -453,7 +459,7 @@ body {
   background-color: #000000;
   font-size: 0;
   vertical-align: middle;
-  margin-top: -37px;
+  margin-top: -33px;
   opacity: 0.3;
 }
 
@@ -484,14 +490,15 @@ body {
   font-size: 18px;
   line-height: 30px;
   text-transform: uppercase;
+  font-weight: 700;
+  color: #000000;
   margin: 0;
-  padding-bottom: 26px;
+  padding-bottom: 23px;
 }
 
 .contacts p {
-  font-size: 16px;
   line-height: 18px;
-  color: #666666;radio
+  color: #666666;
   margin: 0;
   margin-bottom: 18px;
   width: 210px;
@@ -513,6 +520,17 @@ body {
   cursor: pointer;
   margin-top: 19px;
   border-radius: 3px;
+}
+
+.btn-write-us:hover {
+  background-color: #e74246;
+}
+
+.btn-write-us:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #d7373b;
+  border-top: 3px solid #c13135;
+  padding-top: 14px;
 }
 
 /*Стили футер*/
@@ -586,12 +604,13 @@ body {
   display: block;
   font-size: 36px;
   line-height: 36px;
+  font-weight: 700;
+  color: #000000;
   margin-top: 6px;
   margin-bottom: 10px;
 }
 
 .text p {
-  font-size: 16px;
   line-height: 22px;
   color: #444444;
   margin: 0;
@@ -612,6 +631,7 @@ body {
   line-height: 55px;
   text-align: center;
   font-weight: 500;
+  color: #000000;
 
   margin-top: 0;
   padding-top: 79px;
@@ -630,7 +650,7 @@ body {
   border: 0px;
   padding: 0;
   width: 260px;
-  margin: 50px auto;
+  margin: 53px auto;
   margin-top: 0;
 }
 
@@ -651,7 +671,7 @@ body {
   padding-right: 20px;
   padding-left: 20px;
   margin-top: 31px;
-  margin-bottom: 17px;
+  margin-bottom: 13px;
   border-radius: 5px;
   background: #eeeeee;
 }
@@ -681,7 +701,7 @@ body {
 }
 
 .price-filter .toggle-min {
-  left: 15px;
+  left: 18px;
 }
 
 .price-filter .toggle-max {
@@ -711,7 +731,7 @@ body {
   font-size: 16px;
   width: 60px;
   height: 22px;
-  margin-left: 10px;
+  margin-left: 9px;
   padding: 8px 10px;
   text-align: center;
   color: #283136;
@@ -721,11 +741,11 @@ body {
 }
 
 .filter-2 {
-  margin-bottom: 29px;
+  margin-bottom: 26px;
 }
 
 .filter-2 legend {
-  margin-bottom: 14px;
+  margin-bottom: 16px;
 }
 
 .filter ul {
@@ -749,7 +769,7 @@ body {
 
 .grids-radio {
   position: relative;
-  padding-left: 35px;
+  padding-left: 37px;
   cursor: pointer;
   font-size: 16px;
   line-height: 20px;
@@ -760,8 +780,8 @@ body {
   position: absolute;
   width: 25px;
   height: 25px;
-  left: 0px;
-  top: 0px;
+  left: 2px;
+  top: -2px;
   background: transparent url("../img/sprite.png") no-repeat;
   background-position: -17px -402px;
   opacity: 0.4;
@@ -772,8 +792,8 @@ body {
   position: absolute;
   width: 25px;
   height: 25px;
-  left: 0px;
-  top: 0px;
+  left: 2px;
+  top: -2px;
   background: transparent url("../img/sprite.png") no-repeat;
   background-position: -17px -461px;
   opacity: 0.4;
@@ -808,7 +828,7 @@ body {
   line-height: 20px;
   color: #283136;
 
-  padding-left: 40px;
+  padding-left: 37px;
   padding-bottom: 24px;
 
   cursor: pointer;
@@ -818,8 +838,8 @@ body {
   position: absolute;
   width: 23px;
   height: 23px;
-  left: 0px;
-  top: 0px;
+  left: 2px;
+  top: -2px;
   background: transparent url("../img/sprite.png") no-repeat;
   background-position: -17px -17px;
   opacity: 0.4;
@@ -829,8 +849,8 @@ body {
   position: absolute;
   width: 27px;
   height: 23px;
-  left: 0px;
-  top: 0px;
+  left: 2px;
+  top: -2px;
   background: transparent url("../img/sprite.png") no-repeat;
   background-position: -17px -74px;
   opacity: 0.4;
@@ -871,6 +891,7 @@ body {
   background-color: #eeeeee;
   border-radius: 3px;
   border: 0;
+  margin-top: 4px;
 }
 
 .column-right {
@@ -959,10 +980,10 @@ body {
 
 .sort li {
   display: inline-block;
-
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
+
   text-transform: uppercase;
   vertical-align: top;
 }
@@ -996,8 +1017,8 @@ body {
   bottom: 0;
   left: 0;
   width: 240px;
-  height: 166px;
-  padding: 21px 60px 43px 60px;
+  height: 164px;
+  padding: 24px 60px 43px 60px;
   background-color: #eeeeee;
   z-index: 10;
 }
@@ -1011,7 +1032,7 @@ body {
 }
 
 .browser {
-  opacity: 0.3;
+  opacity: 0.12;
 }
 
 .product:hover .browser {
@@ -1031,7 +1052,7 @@ body {
   text-transform: uppercase;
   text-align: center;
   margin: 0 auto;
-  margin-bottom: 19px;
+  margin-bottom: 16px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -1085,13 +1106,13 @@ body {
   min-height: 50px;
   margin-left: 40px;
   margin-top: 24px;
-  margin-bottom: 60px;
+  margin-bottom: 61px;
   font-size: 0;
 }
 
 .page-btn {
   display: inline-block;
-  padding: 16px 20px;
+  padding: 17px 20px 15px 20px;
   font-family: "Roboto", "Arial", sans-serif;
   min-width: 10px;
   font-size: 16px;
@@ -1108,7 +1129,7 @@ body {
 }
 
 .next {
-  padding: 16px 78px;
+  padding: 17px 78px 15px 78px;
 }
 
 .page-btn:hover,
@@ -1116,15 +1137,21 @@ body {
   background-color: #dfdfdf;
 }
 
-.page-btn:active,
 .btn:active {
   border-top: 3px solid #bfbfbf;
   padding-top: 13px;
+  background-color: #dfdfdf;
+  outline: none;
+}
+
+.page-btn:active {
+  border-top: 3px solid #bfbfbf;
+  padding-top: 14px;
   background-color: #dfdfdf;
 }
 
 .pagination .current {
   border: 3px solid #dbdbdb;
-  padding: 13px 17px 13px 17px;
+  padding: 14px 17px 12px 17px;
   background-color: #ffffff;
 }
