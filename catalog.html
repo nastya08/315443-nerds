@@ -224,6 +224,24 @@
       </div>
     </footer>
     <div class="modal-window">
+      <button class="modal-window-close" type="button" title="Закрыть">Закрыть</button>
+      <h2 class="modal-window-title">Напишите нам</h2>
+      <form class="write-us-form" action="https://echo.htmlacademy.ru" method="post">
+        <label for="name-field">
+          <p>Ваше имя</p>
+          <input type="text" name="name" id="name-field" placeholder="Представьтесь, пожалуйста">
+        </label>
+        <label for="email-field">
+          <p>Ваш e-mail</p>
+          <input type="email" name="email" id="email-field" placeholder="Для отправки ответа">
+        </label>
+        <label for="letter-field">
+          <p class="letter">Текст письма:</p>
+          <textarea name="letter" id="letter-field" placeholder="В свободной форме"></textarea>
+        </label>
+        <button class="btn-send" type="submit">Отправить</button>
+      </form>
     </div>
+    <script src="js/script.js"></script>
   </body>
 </html>
