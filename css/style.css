@@ -205,6 +205,7 @@ body {
   background: #ffffff;
   border: 2px solid #c1c1c1;
   border-radius: 50%;
+  vertical-align: top;
   z-index: 15;
 }
 
@@ -553,9 +554,7 @@ body {
   min-height: 308px;
   padding: 54px 0;
 
-  background-image: url("../img/nerds-map.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
+  background: #ffffff url("../img/nerds-map.jpg") no-repeat center;
 }
 
 .contacts {
@@ -1156,6 +1155,12 @@ body {
   overflow: hidden;
 }
 
+.product:first-child p,
+.product:nth-child(3) p,
+.product:nth-child(4) p {
+  width: 180px;
+}
+
 .btn-price {
   display: block;
   color: #ffffff;
@@ -1289,11 +1294,13 @@ body {
 }
 
 .modal-window-close::before {
-  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 
 .modal-window-close::after {
-  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 
 .modal-window-close:hover::before,
@@ -1324,6 +1331,7 @@ body {
 .write-us-form label {
   display: inline-block;
   font-size: 0px;
+  vertical-align: middle;
 }
 
 .write-us-form span {
